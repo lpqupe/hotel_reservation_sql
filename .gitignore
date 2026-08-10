@@ -1,0 +1,7 @@
+# build artifacts - regenerate locally with sql/02_load_data.sql
+data/hotel.db
+*.db-journal
+
+# OS/editor cruft
+.DS_Store
+Thumbs.db
