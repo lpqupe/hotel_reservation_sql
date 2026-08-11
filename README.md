@@ -65,10 +65,6 @@ See [`docs/findings.md`](docs/findings.md) for the full write-up. Headline numbe
 - Bookings made in advance complete at a marginally higher rate (90.2%) than same-day/walk-in bookings (89.5%).
 - Weekend rates run about **$17.78 higher** than weekday rates on average ($159.81 vs. $142.03).
 
-## Note on the Excel file
-
-`excel/hotel_dashboard.xlsx` is the original workbook this analysis was first built in — it still contains a `Sheet4` tab of unrelated scratch notes and an empty `Sheet8` tab left over from working on it. Recommend deleting both tabs **inside Excel itself** (not with a script — the file's pivot tables reference an internal cache that a script-based sheet deletion can silently corrupt) before committing it, so the repo only shows finished work.
-
 ## Why both SQL and Excel
 
 The dashboard was originally built with Excel PivotTables. This repo adds a SQL implementation of the same analysis to show the underlying logic explicitly and make it portable to any relational database — the Excel file remains as the original visual/interactive artifact.
